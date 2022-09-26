@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #D8DDEF;
+}
+
+header {
+    background-color: #7293A0;
+    padding: 16px 0;
+    color: #FAE0E4;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #B5E48C;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: lighter;
+    color: white;
+}
+
+header button {
+    margin-left: 16px;
+    text-transform: uppercase;
+
+}
+
+form {
+    background-color: #D8DDEF;
+    padding: 24px 0;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input {
+    padding: 20px 20px;
+    margin-right: 8px;
+    border-style: none;
+}
+
+button {
+    background-color: #B5E48C;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 10px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+#adicionar:hover {
+    border-radius: 30px 30px;
+    background-color: #EDEEE9;
+    transition: 1s;
+}
+
+#botao-cancel {
+    background-color: #CB2027;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+}
+
+ul li {
+    max-width: 25%;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
